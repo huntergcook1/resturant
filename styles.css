@@ -1,1 +1,90 @@
+.main {
+    background-color: rgb(8, 98, 0);
+    margin-top: 50px;
+    width: 80%;
+    margin: 60 auto;
+    display: flex;
+    justify-content: row;
+    justify-content: flex-end;
+}
+
+body {
+    background-image: url('background.jpg'); /* Background image */
+    background-size: cover; /* Cover the entire page */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ccc; 
+    border-radius: 10px; 
+    padding: 20px; 
+    margin: 20px; 
+    max-width: 800px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 90%;
+    margin: auto;
+}
+nav div {
+    margin: 10px;
+}
+
+.image-container {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
+}
+
+.image-container img {
+    width: 100%; /* Make images responsive */
+    max-width: 200px; /* Set a maximum width */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 10px; /* Add horizontal space between images */
+    transition: max-width 0.3s ease; /* Smooth transition for resizing */
+}
+
+.wording {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: bottom;
+    margin: 20px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .image-container {
+        right: 10px; /* Adjust the value as needed */
+    }
+
+    .image-container img {
+        max-width: 150px; /* Adjust the maximum width for smaller screens */
+        margin: 10px 0; /* Ensure space between images on smaller screens */
+    }
+}
+
+/* Media query for very small screens */
+@media (max-width: 480px) {
+    .image-container img {
+        max-width: 100px; /* Adjust the maximum width for very small screens */
+    }
+}
+
+.logo {
+    flex-grow: 2;
+}
 
